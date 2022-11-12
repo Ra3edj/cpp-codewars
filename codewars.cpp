@@ -60,4 +60,28 @@ string number_to_string(int num) {
   return to_string(num);
 }
 
+// 8 kyu Remove First and Last Character
+#include <string>
+using namespace std; 
+
+string sliceString (string str )
+{
+  // your code is here ... Hope You Enjoy !!
+    str.erase(str.begin());
+    str.erase(str.end() - 1);
+    return str; 
+}
+
+// 8 kyu String repeat
+#include <string>
+using namespace std;
+string repeat_str(size_t repeat, const string& str) {
+  string repeatstr;
+  for(int i = 0; i < repeat;i++){
+    repeatstr.append(str);
+  }
+  return repeatstr;
+}
+
 // 
+
