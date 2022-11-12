@@ -109,5 +109,102 @@ string no_space(const string& x)
    return str;
 }
 
-//
+//8 kyu Grasshopper - Summation
+using namespace std;
+int summation(int num){
+ //Code Here
+  int sum = 0;
+  for(int i = 0; i <= num; i++){
+    sum += i;
+  }
+  return sum;
+}
+
+// 8 kyu Find the smallest integer in the array
+#include <vector>
+
+using namespace std; 
+
+int findSmallest(vector <int> list)
+{
+   // Your Code is Here ... Hope you Enjoy 
+  sort(list.begin(), list.end());
+  return list[0];
+  
+}
+
+// 8 kyu Counting sheep...
+#include <vector>
+
+using namespace std; 
+
+int count_sheep(vector<bool> arr) 
+{
+  int counter = 0;
+  for(auto i : arr){
+    if(i == true){
+      counter += 1;
+    }
+  }return counter;
+}
+
+// 8 kyu Century From Year
+int centuryFromYear(int year) 
+{
+return year % 100 == 0 ? year / 100 : year / 100 + 1;
+}
+
+// 8 kyu Basic Mathematical Operations
+int basicOp(char op, int val1, int val2) {
+  // Your code here
+  switch(op){
+      case '+': return val1 + val2;
+        break;
+      case '-': return val1 - val2;
+        break;
+      case '*': return val1 * val2;
+        break;
+       case '/': return val1 / val2;
+        break;
+  }
+}
+
+// 8 kyu Abbreviate a Two Word Name
+#include <string>
+using namespace std;
+string abbrevName(string name)
+{
+  string str = "";
+  str += toupper(name[0]);
+  str += ".";
+  str += toupper(name[name.find(' ') + 1]); 
+  return str;
+}
+
+// 8 kyu Is n divisible by x and y?
+bool isDivisible(int n, int x, int y) {
+  // your code here
+  return n % x == 0  && n % y == 0 ? true : false;
+}
+
+// 8 kyu Keep Hydrated!
+int litres(double time) {
+    return time / 2;
+}
+
+// 8 kyu Convert a String to a Number!
+#include <string>
+
+int string_to_number(const std::string& s) {
+  //your code here
+  int num = stoi(s);
+  return num;
+}
+
+// 
+
+
+
+
+
 
