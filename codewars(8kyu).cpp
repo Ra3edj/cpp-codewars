@@ -83,5 +83,31 @@ string repeat_str(size_t repeat, const string& str) {
   return repeatstr;
 }
 
-// 
+// 8 kyu Square(n) Sum
+#include <vector>
+using namespace std;
+int square_sum(const vector<int>& numbers)
+{
+    int sum = 0;
+    for(int i : numbers){
+      sum += i * i;
+    }
+    return sum;
+}
+
+// 8 kyu Remove String Spaces
+#include <string>
+using namespace std;
+string no_space(const string& x)
+{ 
+   string str;
+   for(int i = 0; i < x.size();i++){
+     if(x[i] != ' '){
+       str += x[i];
+     }
+   }
+   return str;
+}
+
+//
 
