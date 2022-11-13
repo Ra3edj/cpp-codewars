@@ -201,7 +201,65 @@ int string_to_number(const std::string& s) {
   return num;
 }
 
-// 
+// 8 kyu Beginner - Lost Without a Map
+using namespace std;
+vector<int> maps(const vector<int> & values) {
+  vector<int> val;
+  for(auto i : values){
+    val.push_back(i * 2);
+  }
+  return val;
+}
+
+// 8 kyu Returning Strings
+#include <string>
+using namespace std;
+string greet(const string& n){
+  //your code here
+  string name = "Hello, ";
+  name += n;
+  name +=  " how are you doing today?";
+  return name;
+}
+
+// 8 kyu Count of positives / sum of negatives
+#include <vector>
+using namespace std;
+vector<int> countPositivesSumNegatives(vector<int> input)
+{
+    // go for it!
+  vector<int>v;
+  int count = 0;
+  int negative = 0;
+  for(auto i : input){
+    if(i > 0){
+       count++;
+    }else{
+      negative += i;
+    }
+  }
+  if(!input.empty()){
+ v.push_back(count);
+  v.push_back(negative);
+  }
+   return v;
+  }
+
+//8 kyu Opposites Attract
+bool lovefunc(int f1, int f2) {
+  return f1 % 2 == 0 && f2 % 2 == 1 || f1 % 2 == 1 && f2 % 2 == 0 ;
+}
+
+// 8 kyu Convert a Boolean to a String
+#include <string>
+
+std::string boolean_to_string(bool b){
+  //Your code here
+  return b ? "true" : "false";
+}
+
+
+
 
 
 
