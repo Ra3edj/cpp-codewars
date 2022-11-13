@@ -258,6 +258,12 @@ std::string boolean_to_string(bool b){
   return b ? "true" : "false";
 }
 
+// 8 kyu Beginner Series #1 School Paperwork
+int paperwork(int n, int m){
+    return n < 0 || m < 0 ? 0 : n * m; 
+}
+
+// 
 
 
 
