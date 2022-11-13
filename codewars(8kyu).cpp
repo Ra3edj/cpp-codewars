@@ -263,7 +263,76 @@ int paperwork(int n, int m){
     return n < 0 || m < 0 ? 0 : n * m; 
 }
 
+// 8 kyu Invert values
+#include <vector>
+using namespace std;
+vector<int> invert(vector<int> values)
+{
+  vector<int> val;
+   for(auto i : values){
+      val.push_back(-i);
+   }
+    return val;
+}
+
+// 8 kyu Calculate average
+#include <vector>
+
+double calcAverage(const std::vector<int>& values){
+  // your code
+  double sum = 0;
+  for(auto i: values){
+     if(values.empty()){
+       return 0;
+     } else{
+        sum += i;
+     }
+  }return sum / values.size();
+}
+
+// 8 kyu How good are you really?
+#include <vector>
+using namespace std;
+bool betterThanAverage(vector<int> classPoints, int yourPoints) {
+  // your code here
+   double sum = 0.0;
+  for(auto i : classPoints){
+    sum += i;
+  }
+   return (sum / classPoints.size()) < yourPoints;
+}
+
+// 8 kyu Reversed sequence
+using namespace std;
+vector<int> reverseSeq(int n) {
+  //your code here
+  vector<int> reverseSeq;
+  for(auto i = n; i > 0; i--){
+     reverseSeq.push_back(i);
+  }
+  return reverseSeq;
+}
+
+// 8 kyu Sum Arrays
+#include <vector>
+using namespace std;
+int sum(vector<int> nums) {
+  // your code here
+  double sum = 0.0;
+  if(nums.empty()){
+    return 0;
+  }
+  else{
+    for(auto i : nums){
+      sum += i;
+    }
+  }
+  return sum;
+}
+
 // 
+
+
 
 
 
