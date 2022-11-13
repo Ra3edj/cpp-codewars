@@ -341,7 +341,78 @@ int grow(std::vector<int> nums) {
   return s;
 }
 
+// 8 kyu MakeUpperCase
+#include <string>
+
+std::string makeUpperCase (const std::string& input_str)
+{
+  std:: string upper = "";
+  for(auto i : input_str){
+    upper += toupper(i);
+  }
+   return upper;
+}
+
+// 8 kyu Will you make it?
+bool zero_fuel(uint32_t distance_to_pump, uint32_t mpg, uint32_t fuel_left)
+{
+  // TODO
+  return mpg * fuel_left >= distance_to_pump;
+}
+
+// 8 kyu Simple multiplication
+int simpleMultiplication(int a){
+    //Your code
+   return a % 2 == 0 ?  a * 8 : a * 9;
+}
+
+// 8 kyu Jenny's secret message
+std::string greet(std::string name) 
+{
+  if(name == "Johnny") {
+    return "Hello, my love!";
+  }
+  return "Hello, " + name + "!";
+}
+
+// 8 kyu Is he gonna survive?
+bool hero(int bullets, int dragons) {
+  return bullets >= dragons * 2;
+}
+
+//8 kyu Array plus array
+#include <vector>
+using namespace std;
+int arrayPlusArray(vector<int> a, vector<int> b) {
+  int sum = 0;
+   for(int i : b){
+     a.push_back(i);
+   }
+  for(int j : a){
+    sum += j;    
+  }
+  return sum;
+}
+
+// 8 kyu Find Maximum and Minimum Values of a List
+#include <vector>
+using namespace std;
+
+int min(vector<int> list){
+    sort(list.begin() , list.end());
+    return list[0];
+}
+
+int max(vector<int> list){
+    sort(list.begin() , list.end());
+    return list.back();
+}
+
 // 
+
+
+
+
 
 
 
