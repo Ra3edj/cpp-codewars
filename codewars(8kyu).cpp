@@ -330,7 +330,19 @@ int sum(vector<int> nums) {
   return sum;
 }
 
+// 8 kyu Beginner - Reduce but Grow
+#include <vector>
+int grow(std::vector<int> nums) {
+  // your code here
+  int s = 1;
+  for(auto i : nums){
+     s *= i;
+  }
+  return s;
+}
+
 // 
+
 
 
 
