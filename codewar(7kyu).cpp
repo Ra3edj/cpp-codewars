@@ -29,5 +29,20 @@ string disemvowel(const string& str) {
   }return s;
 }
 
+// 7 kyu Get the Middle Character
+using namespace std;
+string get_middle(string input) 
+{
+  // return the middle character(s)
+  string x = "";
+  if(input.size() % 2 == 0){
+    x += input[(input.size() / 2) - 1];
+    x += input[input.size() / 2];
+  }else{
+    x += input[(input.size() / 2)];
+  }
+  return x;
+}
+
 // 
 
