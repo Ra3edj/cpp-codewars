@@ -159,8 +159,34 @@ string odd_or_even(const vector<int> &arr)
   }return s % 2 == 0 ? "even" : "odd";
 }
 
-//
+//7 kyu Find the stray number
+int stray(std::vector<int> numbers) {
+    for(auto i = 0; i < numbers.size(); i++){
+       if(numbers[i] != numbers[i + 1]){
+         if(numbers[0] != numbers[1]){
+           return numbers[0];
+         }
+         return numbers[i + 1];
+       }
+    }
+};
 
+//7 kyu Count the divisors of a number
+int divisors(int n){  
+   int s = 0;
+  for(auto i = n; i >= 1; i--){
+    if(n % i == 0){
+      s++;
+    }
+  }return s;
+}
+
+//7 kyu Breaking chocolate problem
+int break_chocolate(int n, int m){
+  return n * m - 1 <= 0 ? 0 : n*m-1;
+}
+
+// 
 
 
 
