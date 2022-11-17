@@ -186,6 +186,70 @@ int break_chocolate(int n, int m){
   return n * m - 1 <= 0 ? 0 : n*m-1;
 }
 
+// 7 kyu Sum of a sequence
+int sequenceSum(int start, int end, int step)
+{
+  int s = 0;
+  if(start <= end){
+    for(int i = start; i <= end;i += step){
+      s += i;
+    }
+  }return s;
+}
+
+// 7 kyu Two Oldest Ages
+#include <vector>
+#include<algorithm>
+#include <array>
+using namespace std;
+array<int, 2> two_oldest_ages(vector<int> ages)
+{
+    // your solution goes here
+   sort(ages.begin() , ages.end());
+    return {ages[ages.size() - 2] , ages.back()};
+}
+
+// 7 kyu Remove anchor from URL
+using namespace std;
+string replaceAll(string str) {
+   
+  string x = "";
+   for(auto i : str){
+     if(i == '#'){break;}
+     x += i;
+   }return x;
+}
+
+// 7 kyu Small enough? - Beginner
+#include <vector>
+using namespace std;
+bool small_enough(vector<int> arr, int limit) {
+  // your code here
+  int bigger = 0;
+  for(auto i : arr){
+    if(i > limit) bigger++;
+  }return bigger == 0;
+}
+
+// 7 kyu Sort Numbers
+#include <vector>
+
+std::vector<int> solution(std::vector<int> nums) {
+  sort(nums.begin() , nums.end());
+  return nums;
+}
+
+// 7 kyu Maximum Multiple
+int maxMultiple(int divisor, int bound) 
+{
+  // Your Code is Here ... Enjoy !!! 
+  for(auto i = bound; i >= divisor; i--){
+    if(i % divisor == 0){
+      return i;
+    }
+  }
+}
+
 // 
 
 
