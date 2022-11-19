@@ -250,6 +250,21 @@ int maxMultiple(int divisor, int bound)
   }
 }
 
+// 7 kyu Are the numbers in order?
+#include <vector>
+#include <algorithm>
+using namespace std;
+bool isAscOrder(vector<int> arr)
+{
+    // your code here
+   vector<int>v;
+  for(auto i : arr){
+    v.push_back(i);
+  }
+  sort(v.begin() , v.end());
+  return v == arr;
+}
+
 // 
 
 
