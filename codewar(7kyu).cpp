@@ -265,7 +265,18 @@ bool isAscOrder(vector<int> arr)
   return v == arr;
 }
 
-// 
+// 7 kyu Sum of angles
+int angle(int n) {
+  //your code here
+  int x = 0;
+  for(auto i = 3; i <= n; i++){
+    x += 180;
+  }
+  return x;
+}
+
+//
+
 
 
 
