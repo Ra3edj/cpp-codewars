@@ -275,7 +275,29 @@ int angle(int n) {
   return x;
 }
 
-//
+// 7 kyu Halving Sum
+unsigned halving_sum(unsigned n) {
+  int s = 0;
+  for(auto i = 1;n/i >= 1;i*=2){
+    s += n/i;
+  }return s;
+}
+
+//7 kyu Maximum Triplet Sum (Array Series #7)
+#include <vector>
+
+using namespace std; 
+
+int maxTriSum (vector <int> numbers)
+{
+  // Your code is Here .. Hope You Enjoy !!
+  sort(numbers.begin() , numbers.end());
+  reverse(numbers.begin() , numbers.end());
+  unique(numbers.begin(), numbers.end());
+  return numbers[0] + numbers[1] + numbers[2];
+}
+
+// 
 
 
 
