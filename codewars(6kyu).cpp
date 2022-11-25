@@ -84,7 +84,25 @@ unsigned int countBits(unsigned long long n){
   return c;
 }
 
+//6 kyu Find The Parity Outlier
+#include <vector>
+using namespace std;
+int FindOutlier(vector<int> arr)
+{
+    vector<int>odd;
+   vector<int>even;
+  for(auto i : arr){
+    if(i % 2 == 0){
+      even.push_back(i);
+    }else{
+      odd.push_back(i);
+    }
+  }
+   return odd.size() > even.size() ? even[0] : odd[0];
+}
+
 //
+
 
 
 
